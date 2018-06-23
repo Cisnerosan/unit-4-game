@@ -1,3 +1,60 @@
 /* h1 color #CA7124 */
 /* div descriptor background color #FBE7CD */
 /* div descriptor font color #5BC97D */
+/*  div points of crystal color #5BC97D
+font color for div score tracker blk
+
+wins/loses div container--#4AFDFC
+
+total score div container--#2CA294// font color white
+*/
+
+.descriptor {
+    background-color: #fbe7cd;
+    color: #5bc97d;
+    max-width: 500px;
+    padding: 10px;
+    font-weight: bolder;
+
+}
+
+.number {
+    background-color: #5BC97D;
+    padding-right: 60px;
+    padding-bottom: 35px;
+    float: left;
+
+}
+ 
+span {
+    display: inline-block;
+}
+
+.wins-loss {
+    float: left;
+    padding: 10px;
+    background-color: #4afdfc;
+    height: 40px;
+}
+
+h1,h3 {
+    margin: 0;
+}
+
+.crystal {
+    width: 150px;
+    padding: 0;
+
+}
+/* need to fix positioning */
+.crystals {
+    clear: both;
+    margin: 0;
+    
+
+}
+
+#heart {
+    position: relative;
+    bottom: 25px;
+}
