@@ -8,51 +8,63 @@
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
 </head>
 <body>
+    <header>
     <h1>Crystals Collector!!</h1>
 
         <div class="descriptor">
             <p>
-                You will be given a random number at the start
-                of the game.
+                You will be given a random number at the start of the game.
             </p>
             <p>
-                There are four Crystals below. By clicking on a
-                Crystal you will add a specific amount of points
+                There are four Crystals below. By clicking on a Crystal you will add a specific amount of points
                 to your total score.
             </p>
             <p>
-                You win the game by matching your total score to random
-                number, you lose the game if your total score goes 
+                You win the game by matching your total score to random number, you lose the game if your total score goes 
                 above the random number.
             </p>
             <p>
-                The value of each Crystal is hidden from you until you 
-                click on it.
+                The value of each Crystal is hidden from you until you click on it.
             </p>
             <p>
-                Each time when the game starts, the game will 
-                change the values of each Crystal.
+                Each time when the game starts, the game will change the values of each Crystal.
             </p>
 
         </div>
+    </header>
 
         <div class="number">
             <span id="number">50</span>
 
         </div>
-        <div class="wins-loss">
+
+        <div class="wins-losses">
             <h3 id="message"></h3>
-            <h3>Wins: <span id="win"> </span> </h3>
-            <h3>Loses: <span id="loss"> </span> </h3>
+            <h3 class="status">Wins:<span id= "wins">0</span></h3>
+            <h3 class="status">Losses:<span id= "losses">0</span></h3>
         </div>
-
+      
         <div class="crystals">
-            <img class="crystal" id="heart" src="assets/images/heart.jpg" alt="heart">
-            <img class="crystal" id="square" src="assets/images/square.jpg" alt="square">
-            <img class="crystal" id="tear" src="assets/images/tear.jpg" alt="tear">
-            <img class="crystal" id="triangle" src="assets/images/triangle.jpg" alt="triangle">
+            <div class="crystal-bg heart">
+            <img class="crystal" id="heart" src="assets/images/heart.jpg" alt="heart" data-value="2">
+            <div class="crystal-bg square">           
+            <img class="crystal" id="square" src="assets/images/square.jpg" alt="square"data-value="4">
+            <div class="crystal-bg tear">
+            <img class="crystal" id="tear" src="assets/images/tear.jpg" alt="tear" data-value="3">
+            <div class="crystal-bg triangle">
+            <img class="crystal" id="triangle" src="assets/images/triangle.jpg" alt="triangle" data-value="1">
+        </div>
+        </div>
+        <div class="score">
+            <h3 class="score-heading">Your Total Score is: </h3>
+            <h3 id="score">6</h3>
 
         </div>
+
+        <!-- create div for "your total score is:" -->
+        <!-- and create another Div with score!!! -->
+        <!--  start entering functions to get results -->
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
