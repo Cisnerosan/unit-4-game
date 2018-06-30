@@ -10,7 +10,9 @@ total score div container--#2CA294// font color white
 */
 
 
-
+body {
+    background-image:url('../images/dark-grey-terrazzo.png');
+}
 
 div.descriptor {
     background-color: #fbe7cd;
@@ -18,6 +20,7 @@ div.descriptor {
     max-width: 500px;
     padding: 10px;
     font-weight: bolder;
+    margin: 25px 0;
 
 }
 
@@ -40,10 +43,17 @@ span {
     height: 40px;
 }
 
+
 h1,h3 {
     display:block;
     font-size: normal;
      margin: 0;
+}
+
+h1 {
+    background-color: #CA7124;
+    display: inline-block;
+    padding: 20px 30px;
 }
 
 
@@ -59,7 +69,7 @@ h1,h3 {
 
 #heart {
     position: relative;
-    bottom: 25px;
+    top: 25px;
 }
 
 .score-heading {
@@ -103,17 +113,18 @@ div.crystals {
     position: relative;
 }
 
+div.crystal-bg {
+    float: left;
+}
 div.crystal-bg:hover {
+   
     background-color: #fff;
 
 }
-
 div.img.crystal {
     cursor: pointer;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    float: left;
+
     width: 100px;
 }
 
